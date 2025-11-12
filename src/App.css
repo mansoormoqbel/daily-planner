@@ -1,0 +1,133 @@
+ body {
+  font-family: "Tajawal", sans-serif;
+  background: linear-gradient(to bottom right, #89f7fe, #66a6ff);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.task-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-form input, .task-form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.task-form button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.task-section {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.task {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task.done span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.empty {
+  color: #ffffff;
+  font-style: italic;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+

@@ -8,12 +8,7 @@ function TaskForm({ onAdd }) {
     e.preventDefault();
     if (!text.trim()) return;
 
-    /* const newTask = {
-      id: Date.now(),
-      text,
-      time,
-      completed: false,
-    }; */
+    
 
     onAdd({text, time,completed:false});
     setText("");
